@@ -95,9 +95,8 @@
         <div class="stage-container remove">
             <div class="page_two hide">
                 <div id="text" style="display:none;">
-                    <p>倒计时<br><br>还有<span id="time"></span><br><span
-                            id="text1"></span><br>
-                        在新年到来之际<br>祝父亲<br>身体健康，工作顺利<br>平安喜乐<br>万事顺遂<br><br>Tips:可以试一下点击屏幕！<br><br><br><span
+                    <p>时光飞逝<br><br>不知不觉，新年的钟声已经敲响<span id="time"></span><br><span id="text1"></span><br>
+                        在新年到来之时<br>祝父亲<br>身体健康，工作顺利<br>平安喜乐<br>万事顺遂<br><br>Tips:嘿嘿，可以试一下点击屏幕噢！<br><br><br><span
                             id="copyright"></span></p>
                 </div>
                 <div class="type_words" id="contents" style="font-size:1.15rem;line-height:1.5rem;"></div>
@@ -279,9 +278,17 @@
             var diff2Minutes = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours) / minutes)
             var diff2Seconds = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours - diff2Minutes *
                 minutes) / seconds)
-            if (todayMonth == 1) { if (todayDate == 1) { document.getElementById("text1").innerHTML = "春节到啦,祝你" + todayYear + "新年快乐！" } }
-            else { document.getElementById("text1").innerHTML = "提前祝你" + newYear + "新年快乐" }
-            document.getElementById("time").innerHTML = diffDays + "天" + diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒" + "就是兔年啦"
+            if (todayMonth == 1) 
+            { 
+               // if (todayDate == 22) 
+                //{ document.getElementById("text1").innerHTML = "吼吼 兔年啦，祝你" + "大展宏图，身体健康，学习顺利" + "平安喜乐，快乐每天，不止新年！" } 
+            }
+            else 
+            { 
+                document.getElementById("text1").innerHTML = "提前祝你" + newYear + "新年快乐" 
+            }
+
+            //document.getElementById("time").innerHTML = diffDays + "天" + diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒" + "就是兔年啦"
         }
 
         time()
